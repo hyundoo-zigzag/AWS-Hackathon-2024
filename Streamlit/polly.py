@@ -30,7 +30,7 @@ class Polly:
         
     def get_polly_output(self, text):
         response = self.polly_client.synthesize_speech(
-            Engine="neural",
+            Engine="neural" if self.lang!='Russian' else 'standard',
             Text=text,
             OutputFormat="mp3",
             VoiceId=self.voice

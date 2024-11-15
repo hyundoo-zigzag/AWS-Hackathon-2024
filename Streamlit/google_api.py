@@ -1,9 +1,31 @@
 import re
 import requests
 
+lang_dict = {
+    'Dutch':'nl',
+    'Norwegian':'no',
+    'Danish':'da',
+    'German':'de',
+    'Russian':'ru',
+    'Spanish':'es',
+    'English':'en',
+    'Italian':'it',
+    'Japanese':'ja',
+    'Chinese':'zh',
+    'Czech':'cs',
+    'Turkish':'tr',
+    'Portuguese':'pt',
+    'Polish':'pl',
+    'French':'fr',
+    'Finnish':'fi',
+    '한국어':'ko',
+    'Hindi':'hi'
+}
+
 class GoogleMapsAPI:
-    def __init__(self, api_key):
+    def __init__(self, api_key, lang):
         self.api_key=api_key
+        self.lang = lang_dict.get(lang, 'en')
     
     # place_name를 기반으로 place_id 추출
     def get_place_id_from_name(self, place_name):
@@ -54,6 +76,7 @@ class GoogleMapsAPI:
         params = {
             "place_id": place_id,
             "fields": "formatted_address,reviews",  # 주소, 별점, 리뷰 필드 요청
+            "language": self.lang,
             "key": self.api_key
         }
         
@@ -66,14 +89,16 @@ class GoogleMapsAPI:
         else:
             return None, []
         
-    def get_nearby_places(self, location, place_type, radius, rankby="prominence"):
+    def get_nearby_places(self, location, place_type, keyword, radius, rankby="prominence"):
         url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
         params = {
             "location": location,  # 'latitude,longitude' 형식
             "radius": radius,      # 검색 반경 (미터 단위)
             "type": place_type,    # 장소 유형 (예: restaurant, hotel, amusement_park 등)
+            "keyword": keyword,    # 검색어
             "rankby": rankby,      # 결과 정렬 기준
-            "key": self.api_key
+            "key": self.api_key,   
+            "language": self.lang
         }
         
         response = requests.get(url, params=params)
