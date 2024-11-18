@@ -141,6 +141,7 @@ bedrock_prompt_dict = {
             - Antwoord nooit door te bedenken wat er niet in de algemene voorwaarden staat.
             - Ik antwoord op een vriendelijke manier.
             - Er zijn geen uitzonderingen.
+            - Je antwoordt met Nederlands.
 
             {context}
         ''',
@@ -160,6 +161,7 @@ bedrock_prompt_dict = {
             - Geef de samenvatting bondig weer.
             - Gebruik geen woorden als 'Samenvatting is als volgt' en geef de samenvatting direct terug.
             - Er zijn geen uitzonderingen.
+            - Je antwoordt met Nederlands.
 
             [response example]
             Mooie traditionele kaiseki-keuken. Vriendelijk en gastvrij personeel, attente service. Klanttevredenheid met uitstekende ingrediënten en stevige gerechten.
@@ -171,6 +173,7 @@ bedrock_prompt_dict = {
             - De informatie wordt vertaald in het Nederlands en doorgestuurd.
             - De informatie over de plaats is georganiseerd rond wat de reiziger mogelijk interesseert.
             - Als u iets interessants hebt, voeg het dan toe.
+            - Je antwoordt met Nederlands.
 
             [current_year]
             2024
@@ -206,6 +209,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Retourneert alleen de afgeleide itemnaam.
             - Gebruik geen retoriek zoals '~van' of '~in'.
+            - Je antwoordt met Nederlands.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Chinese Muur, Grand Canyon
@@ -226,6 +230,7 @@ bedrock_prompt_dict = {
             - Svar aldri ved å forestille deg noe som ikke står i vilkårene som er gitt.
             - Jeg svarer på en snill måte.
             - Det er ingen unntak.
+            - Du svarer med Norwegisch.
 
             {context}
 
@@ -246,6 +251,7 @@ bedrock_prompt_dict = {
             - Bare returner sammendraget kortfattet.
             - Ikke legg ord som «Sammendrag er som følger» og returner bare sammendraget umiddelbart.
             - Det er ingen unntak.
+            - Du svarer med Norwegisch.
 
             [response example]
             Vakkert tradisjonelt kaiseki-kjøkken. Snille og imøtekommende personale, oppmerksom service. Kundetilfredshet med utmerkede råvarer og solide retter.
@@ -266,6 +272,7 @@ bedrock_prompt_dict = {
             - Ikke gjør det åpenbart at du refererer til dokumentet, for eksempel 'i henhold til dokumentet'.
             - Svar slik at du kan forklare det til brukeren med en gang.
             - Svar slik at du kan lese det med en gang som kunngjørerens manus
+            - Du svarer med Norwegisch.
         ''',
 
         "agent_system_prompt": '''
@@ -292,6 +299,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Returnerer bare det utledede varenavnet.
             - Ikke bruk retorikk som '~av' eller 'in~'.
+            - Du svarer med Norwegisch.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -312,6 +320,7 @@ bedrock_prompt_dict = {
             - Svar aldrig ved at forestille dig noget, der ikke er i de angivne vilkår og betingelser.
             - Jeg svarer på en venlig måde.
             - Der er ingen undtagelser.
+            - Du svarer med dänisch.
 
             {context}
         ''',
@@ -331,6 +340,7 @@ bedrock_prompt_dict = {
             - Bare returner resuméet kortfattet.
             - Sæt ikke ord som 'Oversigt er som følger' og returner blot oversigten med det samme.
             - Der er ingen undtagelser.
+            - Du svarer med dänisch.
 
             [response example]
             Smukt traditionelt kaiseki-køkken. Venligt og imødekommende personale, opmærksom betjening. Kundetilfredshed med fremragende råvarer og solide retter.
@@ -351,6 +361,7 @@ bedrock_prompt_dict = {
             - Gør det ikke åbenlyst, at du refererer til dokumentet, såsom 'ifølge dokumentet'.
             - Svar, så du kan forklare det til brugeren med det samme.
             - Svar, så du kan læse det med det samme som talerens manuskript
+            - Du svarer med dänisch.
         ''',
 
         "agent_system_prompt": '''
@@ -377,6 +388,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Returnerer kun det udledte varenavn.
             - Brug ikke retorik som '~af' eller 'i ~'.
+            - Du svarer med dänisch.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -397,6 +409,7 @@ bedrock_prompt_dict = {
             - Antworten Sie niemals, indem Sie sich etwas vorstellen, das nicht in den gegebenen Bedingungen ist.
             - Ich antworte auf eine Art und Weise.
             - Es gibt keine Ausnahmen.
+            - Sie antworten mit Deutsch.
 
             {context}
         ''',
@@ -416,6 +429,7 @@ bedrock_prompt_dict = {
             - Geben Sie einfach die Zusammenfassung kurz zurück.
             - Setzen Sie keine Wörter wie 'Zusammenfassung ist wie folgt' und geben Sie einfach die Zusammenfassung sofort zurück.
             - Es gibt keine Ausnahmen.
+            - Sie antworten mit Deutsch.
 
             [response example]
             Schöne traditionelle kaiseki Küche. freundliches und einladendes Personal, aufmerksamer Service. Kundenzufriedenheit mit ausgezeichneten Zutaten und herzhaften Gerichten.
@@ -436,6 +450,7 @@ bedrock_prompt_dict = {
             - Machen Sie nicht deutlich, dass Sie sich auf das Dokument beziehen, wie z.B. „gemäß dem Dokument".
             - Antwort, damit Sie es dem Benutzer sofort erklären können.
             - Antworte, damit du es sofort lesen kannst, wie das Skript des Ansagers
+            - Sie antworten mit Deutsch.
         ''',
 
         "agent_system_prompt": '''
@@ -462,6 +477,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Gibt nur den abgeleiteten Namen zurück.
             - Verwenden Sie keine Rhetorik wie '~von' oder 'in~'.
+            - Sie antworten mit Deutsch.
 
             [response example]
             Mireuksa Tempel Stein Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -482,6 +498,7 @@ bedrock_prompt_dict = {
             - Никогда не отвечать, воображая что-то, что не в условиях, указанных.
             - Я отвечаю в добром смысле.
             - Исключений нет.
+            - Вы отвечаете с русский.
 
             {context}
         ''',
@@ -501,6 +518,7 @@ bedrock_prompt_dict = {
             - Просто верни своевременно своё резю.
             - Не ставьте такие слова, как «Ввод в перечень выглядит следующим образом» и просто верните своё резюме немедленно.
             - Исключений нет.
+            - Вы отвечаете с русский.
 
             [response example]
             Красивая традиционная кухня казэки. Добрый и гостеприимный персонал, внимательное обслуживание. Удовлетворенность клиентов отличными ингредиентами и сердечными блюдами.
@@ -521,6 +539,7 @@ bedrock_prompt_dict = {
             - Не делайте очевидным, что вы ссылаетесь на документ, например, "согласно документу".
             - Ответить так, что вы можете объяснить его пользователю сразу.
             - Ответить так, чтобы вы могли сразу прочитать его, как сценарий диктора
+            - Вы отвечаете с русский.
         ''',
 
         "agent_system_prompt": '''
@@ -547,6 +566,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Возвращает только выводное имя элемента.
             - Не используйте риторику как '~из' или 'в~'.
+            - Вы отвечаете с русский.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -567,6 +587,7 @@ bedrock_prompt_dict = {
             - Nunca responda imaginando algo que no está en los términos y condiciones dados.
             - Respondo de una manera amable.
             - No hay excepciones.
+            - Responde con español.
 
             {context}
         ''',
@@ -586,6 +607,7 @@ bedrock_prompt_dict = {
             - Sólo devuelve el resumen sucintamente.
             - No pongas palabras como 'Resumen es como sigue' y simplemente devuelve el resumen inmediatamente.
             - No hay excepciones.
+            - Responde con español.
 
             [response example]
             Hermosa cocina tradicional kaiseki. Personal amable y acogedor, servicio atento. La satisfacción del cliente con excelentes ingredientes y platos abundantes.
@@ -606,6 +628,7 @@ bedrock_prompt_dict = {
             - No dejes claro que te refieres al documento, como "según el documento".
             - Responda para que pueda explicarlo al usuario de inmediato.
             - Responde para que puedas leerlo de inmediato como el guión del locutor
+            - Responde con español.
         ''',
 
         "agent_system_prompt": '''
@@ -632,6 +655,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Devuelve sólo el nombre del elemento inferido.
             - No uses retórica como '~de' o 'en~'.
+            - Responde con español.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -652,6 +676,7 @@ bedrock_prompt_dict = {
             - Never answer by imagining something that is not in the terms and conditions given.
             - I answer in a kind way.
             - There are no exceptions.
+            - You answer with English.
 
             {context}
         ''',
@@ -671,6 +696,7 @@ bedrock_prompt_dict = {
             - Just return the summary succinctly.
             - Don't put words such as 'Summary is as follows' and just return the summary immediately.
             - There are no exceptions.
+            - You answer with English.
 
             [response example]
             Beautiful traditional kaiseki cuisine. Kind and welcoming staff, attentive service. Customer satisfaction with excellent ingredients and hearty dishes.
@@ -691,6 +717,7 @@ bedrock_prompt_dict = {
             - Do not make it obvious that you refer to the document, such as 'according to the document'.
             - Answer so that you can explain it to the user right away.
             - Answer so that you can read it right away like the announcer's script
+            - You answer with English.
         ''',
 
         "agent_system_prompt": '''
@@ -717,6 +744,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Returns only the inferred item name.
             - Don't use rhetoric like '~of' or 'in~'.
+            - You answer with English.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -737,6 +765,8 @@ bedrock_prompt_dict = {
             - Mai rispondere immaginando qualcosa che non è nei termini e condizioni dati.
             - Rispondo in un modo gentile.
             - Non ci sono eccezioni.
+            - Rispondi con italiano.
+            - Rispondi con italiano.
 
             {context}
         ''',
@@ -745,6 +775,7 @@ bedrock_prompt_dict = {
             [role]
             - Leggete tutte le recensioni date e le riassumete in una frase selezionando solo il contenuto principale.
             - Le informazioni vengono tradotte in italiano e trasmesse.
+            - Rispondi con italiano.
 
             [current_year]
             2024
@@ -756,6 +787,7 @@ bedrock_prompt_dict = {
             - Restituisci il sommario in modo succinto.
             - Non mettere parole come 'Summary è come segue' e semplicemente restituire il sommario immediatamente.
             - Non ci sono eccezioni.
+            - Rispondi con italiano.
 
             [response example]
             Bella cucina tradizionale kaiseki. Personale gentile e accogliente, servizio attento. La soddisfazione del cliente con ingredienti eccellenti e piatti abbondanti.
@@ -776,6 +808,7 @@ bedrock_prompt_dict = {
             - Non rendere evidente che si fa riferimento al documento, come ad esempio "secondo il documento".
             - Rispondi in modo da poterlo spiegare all'utente immediatamente.
             - Rispondi in modo che tu possa leggerlo immediatamente come il copione dell'annunciatore
+            - Rispondi con italiano.
         ''',
 
         "agent_system_prompt": '''
@@ -802,6 +835,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Restituisce solo il nome dell' elemento inferito.
             - Non usare retorica come '~di' o 'in~'.
+            - Rispondi con italiano.
 
             [response example]
             Mireuksa Tempio Pietra Pagoda, Palazzo di Gyeongbokgung, Peak Seongsan Ilchulbong, Angkor Wat, Grande Muraglia, Grand Canyon
@@ -822,6 +856,7 @@ bedrock_prompt_dict = {
             - 決して、与えられた条件や条件に合わないものを想像してはいけません。
             - 私は親切に答えます。
             - 例外はありません。
+            - 日本語で応答します。
 
             {context}
         ''',
@@ -841,6 +876,7 @@ bedrock_prompt_dict = {
             - 要約を簡潔に返すだけです。
             - 「要約は次のように」というような言葉は使わず、すぐに要約を返すだけです。
             - 例外はありません。
+            - 日本語で応答します。
 
             [response example]
             美しい伝統懐石料理です。 親切で歓迎するスタッフ、気配りのあるサービスです。 素晴らしい食材と心のこもった料理でお客様の満足度を高めました。
@@ -861,6 +897,7 @@ bedrock_prompt_dict = {
             - 「ドキュメントに従って」のように、ドキュメントを参照していることを明確にしてはいけません。
             - 答えは、すぐにユーザーに説明できるようにすることです。
             - アナウンサーの台本のように、すぐに読めるように答えましょう
+            - 日本語で応答します。
         ''',
 
         "agent_system_prompt": '''
@@ -887,6 +924,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - 推測された項目名だけを返します。
             - 「~の」のような修辞法を使ってはいけません。
+            - 日本語で応答します。
 
             [response example]
             弥勒寺址石塔、景福宮、城山日出峰、アンコールワット、万里の長城、グランドキャニオンです
@@ -907,6 +945,7 @@ bedrock_prompt_dict = {
             - 永远不要通过想象不在给定的条款和条件中的东西来回答。
             - 我以一种亲切的方式回答。
             - 没有例外。
+            - 你回答中文。
 
             {context}
         ''',
@@ -926,6 +965,7 @@ bedrock_prompt_dict = {
             - 只需简明扼要地返回摘要即可。
             - 不要写"摘要如下"等字，立即返回摘要即可。
             - 没有例外。
+            - 你回答中文。
 
             [response example]
             美丽的传统怀石料理。 工作人员热情友好,服务周到。 优质的食材和丰盛的菜肴让顾客满意。
@@ -946,6 +986,7 @@ bedrock_prompt_dict = {
             - 不要明确提到文件，例如"根据文件"。
             - 回答，以便您立即向用户解释。
             - 回答，这样你就可以像播音员的剧本一样立即阅读。
+            - 你回答中文。
         ''',
 
         "agent_system_prompt": '''
@@ -972,6 +1013,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - 只返回推断的项目名称。
             - 不要使用"~关于"或"在~"这样的修辞。
+            - 你回答中文。
 
             [response example]
             弥勒寺石塔、景福宫、城山日出峰、吴哥窟、长城、大峡谷
@@ -992,6 +1034,7 @@ bedrock_prompt_dict = {
             - Nikdy neodpovídejte tím, že si budete představovat něco, co není v daných podmínkách.
             - Odpovídám laskavým způsobem.
             - Nejsou žádné výjimky.
+            - Odpovíte pomocí čeština.
 
             {context}
         ''',
@@ -1011,6 +1054,7 @@ bedrock_prompt_dict = {
             - Stačí stručně vrátit shrnutí.
             - Neuvádějte slova jako „Shrnutí je následující“ a okamžitě shrnutí vraťte.
             - Nejsou žádné výjimky.
+            - Odpovíte pomocí čeština.
 
             [response example]
             Krásná tradiční kaiseki kuchyně. Milý a ochotný personál, pozorná obsluha. Spokojenost zákazníků s vynikajícími surovinami a vydatnými pokrmy.
@@ -1022,6 +1066,7 @@ bedrock_prompt_dict = {
             - Informace jsou přeloženy do čeština a předány dál.
             - Informace o místě jsou uspořádány podle toho, co může cestovatele zajímat.
             - Pokud máte něco zajímavého, uveďte to.
+            - Odpovíte pomocí čeština.
 
             [current_year]
             2024
@@ -1057,6 +1102,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Vrátí pouze odvozený název položky.
             - Nepoužívejte rétoriku jako '~z' nebo 'v~'.
+            - Odpovíte pomocí čeština.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Velká zeď, Grand Canyon
@@ -1077,6 +1123,7 @@ bedrock_prompt_dict = {
             - Verilen hüküm ve koşullarda olmayan bir şeyi hayal ederek asla yanıt vermeyin.
             - Nazik bir şekilde yanıtlarım.
             - Hiçbir istisna yoktur.
+            - Türkçe ile cevaplayın.
 
             {context}
         ''',
@@ -1096,6 +1143,7 @@ bedrock_prompt_dict = {
             - Özeti özlü bir şekilde geri gönderin.
             - 'Özet aşağıdaki gibidir' gibi kelimeler koymayın ve özeti hemen geri gönderin.
             - Hiçbir istisna yoktur.
+            - Türkçe ile cevaplayın.
 
             [response example]
             Güzel geleneksel kaiseki mutfağı. Nazik ve misafirperver personel, özenli hizmet. Mükemmel malzemeler ve doyurucu yemeklerle müşteri memnuniyeti.
@@ -1116,6 +1164,7 @@ bedrock_prompt_dict = {
             - 'Belgeye göre' gibi belgeye atıfta bulunduğunuzu belli etmeyin.
             - Kullanıcıya hemen açıklayabileceğiniz şekilde cevaplayın.
             - Spikerin metni gibi hemen okuyabileceğiniz şekilde cevaplayın
+            - Türkçe ile cevaplayın.
         ''',
 
         "agent_system_prompt": '''
@@ -1142,6 +1191,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Yalnızca çıkarılan öğe adını döndürür.
             - '~ 'nin' veya 'içeri~' gibi retorik kullanmayın.
+            - Türkçe ile cevaplayın.
 
             [response example]
             Mireuksa Tapınağı Taş Pagoda, Gyeongbokgung Sarayı, Seongsan Ilchulbong Zirvesi, Angkor Wat, Çin Seddi, Büyük Kanyon
@@ -1162,6 +1212,7 @@ bedrock_prompt_dict = {
             - Nunca responda imaginando algo que não está nos termos e condições dados.
             - Respondo de uma forma gentil.
             - Não há exceções.
+            - Responde com Português.
 
             {context}
         ''',
@@ -1181,6 +1232,7 @@ bedrock_prompt_dict = {
             - Apenas devolva o resumo sucintamente.
             - Não coloque palavras como 'Resumir é como segue' e apenas retorne o resumo imediatamente.
             - Não há exceções.
+            - Responde com Português.
 
             [response example]
             Bela cozinha tradicional kaiseki. Pessoal gentil e acolhedor, atencioso serviço. Satisfação do cliente com excelentes ingredientes e pratos abundantes.
@@ -1201,6 +1253,7 @@ bedrock_prompt_dict = {
             - Não deixe claro que se refere ao documento, como "segundo o documento".
             - Responda para que você possa explicar ao usuário imediatamente.
             - Responda para que possa lê-lo imediatamente como o guião do locutor.
+            - Responde com Português.
         ''',
 
         "agent_system_prompt": '''
@@ -1227,6 +1280,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Devolve apenas o nome de item inferido.
             - Não use retórica como '~de' ou 'em~'.
+            - Responde com Português.
 
             [response example]
             Pagoda de pedra do templo Mireuksa, Palácio de Gyeongbokgung, Pico Seongsan Ilchulbong, Angkor Wat, Grande Muralha, Grand Canyon
@@ -1247,6 +1301,7 @@ bedrock_prompt_dict = {
             - Nigdy nie odpowiadaj, wyobrażając sobie coś, czego nie ma w podanych warunkach.
             - Odpowiadam w miły sposób.
             - Nie ma wyjątków.
+            - Odpowiadasz za pomocą polski.
 
             {context}
         ''',
@@ -1266,6 +1321,7 @@ bedrock_prompt_dict = {
             - Po prostu zwróć podsumowanie zwięźle.
             - Nie wpisuj słów takich jak „Zdanie Yoak jest następujące” i po prostu zwróć podsumowanie natychmiast.
             - Nie ma wyjątków.
+            - Odpowiadasz za pomocą polski.
 
             [response example]
             Piękna tradycyjna kuchnia kaiseki. Miła i gościnna obsługa, uważna obsługa. Zadowolenie klienta dzięki doskonałym składnikom i sycącym daniom.
@@ -1286,6 +1342,7 @@ bedrock_prompt_dict = {
             - Nie ujawniaj, że odnosisz się do dokumentu, np. „zgodnie z dokumentem”.
             - Odpowiedz tak, aby od razu wyjaśnić to użytkownikowi.
             - Odpowiedz tak, aby od razu przeczytać, jak skrypt spikera
+            - Odpowiadasz za pomocą polski.
         ''',
 
         "agent_system_prompt": '''
@@ -1312,6 +1369,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Zwraca tylko wywnioskowaną nazwę elementu.
             - Nie używaj retoryki takiej jak '~z' lub 'w~'.
+            - Odpowiadasz za pomocą polski.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -1332,6 +1390,7 @@ bedrock_prompt_dict = {
             - Ne répondez jamais en imaginant quelque chose qui n'est pas dans les conditions données.
             - Je réponds gentiment.
             - Il n'y a pas d'exception.
+            - Tu réponds par Français.
 
             {context}
         ''',
@@ -1351,6 +1410,7 @@ bedrock_prompt_dict = {
             - Renvoyez le résumé succinctement.
             - Ne mettez pas de mots comme « Sommaire est le suivant » et renvoyez-le immédiatement.
             - Il n'y a pas d'exception.
+            - Tu réponds par Français.
 
             [response example]
             Belle cuisine traditionnelle kaiseki. Personnel aimable et accueillant, service attentionné. Satisfaction de la clientèle avec d'excellents ingrédients et des plats copieux.
@@ -1370,6 +1430,7 @@ bedrock_prompt_dict = {
             - Il ne fournit que des renseignements exacts et ne répond pas en imaginant ce qui n'est pas dans le document. - N'indiquez pas clairement que vous faites référence au document, par exemple « selon le document ».
             - Répondez pour que vous puissiez l'expliquer à l'utilisateur immédiatement.
             - Réponds pour pouvoir le lire tout de suite comme le scénario de l'annonceur.
+            - Tu réponds par Français.
         ''',
 
         "agent_system_prompt": '''
@@ -1396,6 +1457,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Retourne seulement le nom de l'élément présumé.
             - N'utilisez pas de rhétorique comme '~de' ou '~dans'.
+            - Tu réponds par Français.
 
             [response example]
             Pagode en pierre du temple Mireuksa, palais Gyeonggung, pic Ilchulbong, Angkor Wat, Grande Muraille, Grand Canyon
@@ -1416,6 +1478,7 @@ bedrock_prompt_dict = {
             - Älä koskaan vastaa kuvittelemalla jotain, mikä ei ole annettujen ehtojen mukaista.
             - Vastaan ystävällisesti.
             - Poikkeuksia ei ole.
+            - Vastaat sanalla suomalainen.
 
             {context}
         ''',
@@ -1435,6 +1498,7 @@ bedrock_prompt_dict = {
             - Palauta yhteenveto ytimekkäästi.
             - Älä kirjoita sanoja, kuten "Yhteenveto on seuraava", vaan palauta yhteenveto välittömästi.
             - Poikkeuksia ei ole.
+            - Vastaat sanalla suomalainen.
 
             [response example]
             Kaunis perinteinen kaisekiruoka. Ystävällinen ja vieraanvarainen henkilökunta, huomaavainen palvelu. Asiakastyytyväisyys erinomaisiin raaka-aineisiin ja runsaisiin ruokiin.
@@ -1454,6 +1518,7 @@ bedrock_prompt_dict = {
             - Se antaa vain oikeaa tietoa, eikä vastaa kuvittelemalla, mitä asiakirjassa ei ole. - Älä tee selväksi, että viittaat asiakirjaan, kuten "asiakirjan mukaan".
             - Vastaa, jotta voit selittää sen heti käyttäjälle.
             - Vastaa niin, että voit lukea sen heti kuuluttajan käsikirjoituksen tavoin
+            - Vastaat sanalla suomalainen.
         ''',
 
         "agent_system_prompt": '''
@@ -1480,6 +1545,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - Palauttaa vain päätellyn kohteen nimen.
             - Älä käytä retoriikkaa, kuten '~n' tai '~ssa'.
+            - Vastaat sanalla suomalainen.
 
             [response example]
             Mireuksa Temple Stone Pagoda, Gyeongbokgung Palace, Seongsan Ilchulbong Peak, Angkor Wat, Great Wall, Grand Canyon
@@ -1500,6 +1566,7 @@ bedrock_prompt_dict = {
             - कभी भी कुछ ऐसी कल्पना करके जवाब न दें जो दी गई शर्तों और शर्तों में नहीं।
             - मैं एक तरह से जवाब देता हूं।
             - इसमें कोई अपवाद नहीं है।
+            - आप हिन्दी के साथ जवाब दें.
 
             {context}
         ''',
@@ -1520,6 +1587,7 @@ bedrock_prompt_dict = {
             - 'योक वाक्य इस प्रकार है' जैसे शब्दों को मत डालो और सारांश तुरंत लौटा दो.
             - बस सारांश संक्षिप्त रूप से लौटाएं। सारांश इस प्रकार न रखें और सारांश तुरंत लौटाएँ।
             - इसमें कोई अपवाद नहीं है।
+            - आप हिन्दी के साथ जवाब दें.
 
             [response example]
             खूबसूरत पारंपरिक कासेकी व्यंजन। अच्छा और स्वागतयोग्य स्टाफ, सतर्क सेवा। ग्राहक को उत्कृष्ट सामग्री और हार्दिक व्यंजनों से संतुष्ट होना चाहिए।
@@ -1540,6 +1608,7 @@ bedrock_prompt_dict = {
             - यह स्पष्ट न करें कि आप दस्तावेज का उल्लेख करते हैं, जैसे कि 'दस्तावेज के अनुसार'।
             - जवाब दें ताकि आप इसे यूजर को तुरंत समझा सकें।
             - जवाब दें ताकि आप इसे तुरंत पढ़ सकें जैसे कि घोषणाकर्ता की स्क्रिप्ट
+            - आप हिन्दी के साथ जवाब दें.
         ''',
 
         "agent_system_prompt": '''
@@ -1566,6 +1635,7 @@ bedrock_prompt_dict = {
             [behavior_guidelines]
             - केवल अनुमानित मद नाम लौटाता है.
             - '~का' या '~में'  जैसे बयानबाजी का उपयोग न करें।
+            - आप हिन्दी के साथ जवाब दें.
 
             [response example]
             मीरुक्सा मंदिर पत्थर पगोडा, ग्योंगबोकगंग पैलेस, सोंगसन इलचुलबोंग चोटी, अंगकोर वाट, ग्रेट वॉल, ग्रैंड कैनियन

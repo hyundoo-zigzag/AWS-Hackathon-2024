@@ -29,7 +29,7 @@ def image_welcome():
         st.session_state['init'] = False
         place_id = st.session_state["google_maps"].get_place_id_from_name(name)
         st.session_state['place_id'] = place_id
-        message_from_dict({"role": "assistant", "content": found_script_dict[st.session_state["language"].format(name=name)], "attr":"place" , "data":place_id})
+        message_from_dict({"role": "assistant", "content": found_script_dict[st.session_state["language"]].format(name=name), "attr":"place" , "data":place_id})
         content = st.session_state['scraper'].crawl_info(name)
         summary = st.session_state['bedrock'].get_summary(content)
         audio = st.session_state['polly'].get_polly_output(summary)
@@ -59,7 +59,10 @@ def message_from_dict(message_dict):
 def initialize_session():
     st.session_state['init'] = True
     st.session_state['scraper'] = FierfoxScraper()
-    st.session_state['bedrock'] = Bedrock(lang=st.session_state['language'])
+    st.session_state['bedrock'] = Bedrock(
+        model_id='anthropic.claude-3-5-sonnet-20240620-v1:0',
+        lang=st.session_state['language']
+    )
     st.session_state['polly'] = Polly(st.session_state['language'])
     st.session_state['google_maps'] = GoogleMapsAPI(api_key='AIzaSyATZi8wF2BL2VET2w2fiJnAvsl5Dt6b520', lang=st.session_state['language'])
     st.session_state['messages'] = []
@@ -78,7 +81,6 @@ def find_nearby_places(coordinate, type=None, keyword=None, radius=3000):
     )
     if places is not None:
         for place in places:
-            print(place)
             info = place['geometry']['location']
             info['place_id'] = place['place_id']
             info['이름'] = place['name']
@@ -92,7 +94,7 @@ def find_nearby_places(coordinate, type=None, keyword=None, radius=3000):
                 if summarized_review is not None:
                     info['요약된 리뷰'] = summarized_review
                 else:
-                    info['요약된 리뷰'] = '리뷰 없음'
+                    info['요약된 리뷰'] = '-'
             direction_url = f"https://www.google.com/maps/dir/?api=1&origin_place_id={coordinate}&destination={info['lat']},{info['lng']}&origin_place_id={st.session_state['place_id']}&destination_place_id={place['place_id']}&mode=transit"
             info['url'] = direction_url
             result.append(info)

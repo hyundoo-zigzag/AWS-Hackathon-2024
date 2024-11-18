@@ -56,8 +56,6 @@ class FierfoxScraper:
         document_area = self.driver.find_element(By.CSS_SELECTOR, "div[id='kp-wp-tab-overview']")
         documents = document_area.find_elements(By.CSS_SELECTOR, "h3.LC20lb")[:5]    # 5개 페이지만 크롤링
         urls = [doc.find_element(By.XPATH, "..").get_attribute('href') for doc in documents]
-        print('url :', self.driver.current_url)
-        print("urls :", urls)
         texts = list()
         for url in urls:
             try:
@@ -73,4 +71,7 @@ class FierfoxScraper:
         response = requests.get(url)
         soup = BeautifulSoup(response.text)
         content = soup.find('div', {"id":"mw-content-text"}).text.strip()
+        print(content)
+        if '[편집]' not in content:
+            raise ValueError("위키 문서 없음")
         return content

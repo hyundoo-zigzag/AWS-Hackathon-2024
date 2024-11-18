@@ -41,7 +41,7 @@ tool_config = {
                         "properties": {
                             "query": {
                                 "type": "string",
-                                "description": "사용자가 궁금해하는 여행지, 식당, 랜드마크, 전시품이나 조각상 등의 이름입니다."
+                                "description": "사용자의 입력값에서 추출한 값입니다. 사용자가 궁금해하는 여행지, 식당, 랜드마크, 전시품이나 조각상 등의 이름입니다."
                             }
                         },
                         "required": [
@@ -57,8 +57,7 @@ tool_config = {
 class Bedrock:
     def __init__(
         self,
-        # model_id='anthropic.claude-3-5-sonnet-20240620-v1:0',
-        model_id='anthropic.claude-3-haiku-20240307-v1:0',
+        model_id='anthropic.claude-3-5-sonnet-20240620-v1:0',
         lang='한국어',
         opensearch_index='hackathon-2024-insurance',
         bedrock_prompt_dict=bedrock_prompt_dict,
@@ -94,7 +93,7 @@ class Bedrock:
             system=[{"text":self.bedrock_prompt_dict['summarize_translate_prompt']}],
             messages=messages,
             inferenceConfig={
-                "maxTokens": 4096,   
+                "maxTokens": 4096
             }
         )
         return response['output']['message']['content'][0]['text']
